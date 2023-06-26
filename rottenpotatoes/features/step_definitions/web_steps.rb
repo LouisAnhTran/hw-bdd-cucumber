@@ -90,6 +90,11 @@ When /^(?:|I )check "([^"]*)"$/ do |field|
   check(field)
 end
 
+# Add on for checkbox
+When /^(?:|I )check the "([^"]*)" checkbox$/ do |value|
+    check(value)
+end
+
 When /^(?:|I )uncheck "([^"]*)"$/ do |field|
   uncheck(field)
 end
